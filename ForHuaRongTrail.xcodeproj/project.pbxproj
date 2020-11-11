@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		F26163DB25565D9700542751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26163DA25565D9700542751 /* AppDelegate.swift */; };
 		F26163DD25565D9700542751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26163DC25565D9700542751 /* SceneDelegate.swift */; };
-		F26163DF25565D9700542751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26163DE25565D9700542751 /* ViewController.swift */; };
+		F26163DF25565D9700542751 /* FirstPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26163DE25565D9700542751 /* FirstPuzzleViewController.swift */; };
 		F26163E225565D9700542751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26163E025565D9700542751 /* Main.storyboard */; };
 		F26163E425565D9800542751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26163E325565D9800542751 /* Assets.xcassets */; };
 		F26163E725565D9800542751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26163E525565D9800542751 /* LaunchScreen.storyboard */; };
+		F26163F525565E0200542751 /* FirstPuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26163F425565E0200542751 /* FirstPuzzleViewModel.swift */; };
+		F27AE768255B139100F10E06 /* UIViewExt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AE767255B139100F10E06 /* UIViewExt+.swift */; };
+		F2E2F00D2558F81A00B12264 /* UIImageViewExt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2F00C2558F81A00B12264 /* UIImageViewExt+.swift */; };
+		F2E2F0112559C92500B12264 /* FirstPuzzleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2F0102559C92500B12264 /* FirstPuzzleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F26163D725565D9700542751 /* ForHuaRongTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForHuaRongTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26163DA25565D9700542751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26163DC25565D9700542751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F26163DE25565D9700542751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F26163DE25565D9700542751 /* FirstPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPuzzleViewController.swift; sourceTree = "<group>"; };
 		F26163E125565D9700542751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F26163E325565D9800542751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F26163E625565D9800542751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F26163E825565D9800542751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26163F425565E0200542751 /* FirstPuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPuzzleViewModel.swift; sourceTree = "<group>"; };
+		F27AE767255B139100F10E06 /* UIViewExt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewExt+.swift"; sourceTree = "<group>"; };
+		F2E2F00C2558F81A00B12264 /* UIImageViewExt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageViewExt+.swift"; sourceTree = "<group>"; };
+		F2E2F0102559C92500B12264 /* FirstPuzzleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPuzzleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		F26163D925565D9700542751 /* ForHuaRongTrail */ = {
 			isa = PBXGroup;
 			children = (
+				F2E2F00B2558F80100B12264 /* Comman */,
+				F26163EF25565D9C00542751 /* Screens */,
 				F26163DA25565D9700542751 /* AppDelegate.swift */,
 				F26163DC25565D9700542751 /* SceneDelegate.swift */,
-				F26163DE25565D9700542751 /* ViewController.swift */,
 				F26163E025565D9700542751 /* Main.storyboard */,
 				F26163E325565D9800542751 /* Assets.xcassets */,
 				F26163E525565D9800542751 /* LaunchScreen.storyboard */,
 				F26163E825565D9800542751 /* Info.plist */,
 			);
 			path = ForHuaRongTrail;
+			sourceTree = "<group>";
+		};
+		F26163EF25565D9C00542751 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F26163F125565DAD00542751 /* FirstPuzzle */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F26163F125565DAD00542751 /* FirstPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2F00F2559C91500B12264 /* Model */,
+				F26163F325565DDB00542751 /* Controller */,
+				F26163F225565DD400542751 /* ViewModel */,
+			);
+			path = FirstPuzzle;
+			sourceTree = "<group>";
+		};
+		F26163F225565DD400542751 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F26163F425565E0200542751 /* FirstPuzzleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F26163F325565DDB00542751 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F26163DE25565D9700542751 /* FirstPuzzleViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2E2F00B2558F80100B12264 /* Comman */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2F00C2558F81A00B12264 /* UIImageViewExt+.swift */,
+				F27AE767255B139100F10E06 /* UIViewExt+.swift */,
+			);
+			path = Comman;
+			sourceTree = "<group>";
+		};
+		F2E2F00F2559C91500B12264 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2E2F0102559C92500B12264 /* FirstPuzzleModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26163DF25565D9700542751 /* ViewController.swift in Sources */,
+				F26163DF25565D9700542751 /* FirstPuzzleViewController.swift in Sources */,
 				F26163DB25565D9700542751 /* AppDelegate.swift in Sources */,
+				F27AE768255B139100F10E06 /* UIViewExt+.swift in Sources */,
+				F2E2F0112559C92500B12264 /* FirstPuzzleModel.swift in Sources */,
 				F26163DD25565D9700542751 /* SceneDelegate.swift in Sources */,
+				F2E2F00D2558F81A00B12264 /* UIImageViewExt+.swift in Sources */,
+				F26163F525565E0200542751 /* FirstPuzzleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
