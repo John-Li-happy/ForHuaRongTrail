@@ -1,10 +1,22 @@
 # ForHuaRongTrail
 A time killing game designed for boring time during waiting
 
+## Discription
+A funny time killing game. Swipe the tiles to move characters, get Cao Cao to rescue zone.
+
+## History
+HuaRongTrail is an acient Chinese puzzle game designed by unknown,
+
+In 1980s, people using computer to enumarate the potensial solutions, found out that 81 moves is the least number of succeed-movements.
+
+
 ## Technoligies
 Model-View-ViewModel(MVVM)
+
 UIKit
+
 Delegate
+
 Observation
 
 ## IDE
