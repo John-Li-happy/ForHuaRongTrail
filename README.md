@@ -2,7 +2,7 @@
 A time killing game designed for waiting time  
 
 ## Discription
-A funny time killing game. Swipe tiles to move characters, get Cao Cao to rescue zone.
+Swipe tiles to move characters, get Cao Cao to rescue zone.
 
 ## History
 *HuaRongTrail* is an acient Chinese puzzle game designed by unknown, which inspired by an event in late Han Dynasty. In "Chibi" battle, Cao Cao(a military strategist) was defeated by Liu(another military strategist). Cao had to flee through a narrow canyon called "HuarongTrail", however, Liu's troop had already  waited at the end of the caynon. In order to survive, Cao had to do some clever moves.
