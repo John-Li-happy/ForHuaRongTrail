@@ -12,9 +12,7 @@ class FirstPuzzleViewController: UIViewController {
     var oneBlockWidth = CGFloat()
     var stepCounter = 0
     
-    override var shouldAutorotate: Bool {
-        false
-    }
+    override var shouldAutorotate: Bool { false }
     
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet private weak var woodBorderView: UIView!
@@ -53,9 +51,9 @@ class FirstPuzzleViewController: UIViewController {
         soildersBlockHandler()
     }
     private func initialIUISettings() {
-        
-        woodBorderView.greenBoarder()
+        view.backGroundImage()
         contentView.greenContent()
+        woodBorderView.greenBoarder()
         let _ = contentView.subviews.map{ if $0 is UIImageView {
             guard let imageView = $0 as? UIImageView else { return }
             imageView.blockBasicUISettings()
