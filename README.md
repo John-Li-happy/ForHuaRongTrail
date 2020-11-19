@@ -5,7 +5,7 @@ A time killing game designed for waiting time
 Swipe tiles to move characters, get Cao Cao to rescue zone.
 
 ## History
-"HuaRongTrail" is an acient Chinese puzzle game designed by unknown, which inspired by an event in late Han Dynasty. In "Chibi" battle, Cao Cao(a military strategist) was defeated by Liu(another military strategist). Cao had to flee through a narrow canyon called "HuarongTrail", however, Liu's troop had already  waited in HuarongTrail. In order to survive, Cao had to do some clever moves.
+"HuaRongTrail" is an acient Chinese puzzle game designed by unknown, which inspired by an event in late Han Dynasty. In "Chibi" battle, **Cao Cao**(a military strategist) was defeated by Liu(another military strategist). **Cao** had to flee through a narrow canyon called "HuarongTrail", however, Liu's troop had already  waited in HuarongTrail. In order to survive, **Cao** had to do some clever moves.
 
 In 1980s, people using computer to enumarate the potensial solutions, found out that 81 is the least step-count of HuarongTrail.
 
