@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F225EC7A25E57C1700370DE8 /* ForHuaRongTrail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForHuaRongTrail.entitlements; sourceTree = "<group>"; };
 		F26163D725565D9700542751 /* ForHuaRongTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForHuaRongTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26163DA25565D9700542751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F26163DC25565D9700542751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		F26163D925565D9700542751 /* ForHuaRongTrail */ = {
 			isa = PBXGroup;
 			children = (
+				F225EC7A25E57C1700370DE8 /* ForHuaRongTrail.entitlements */,
 				F2E2F00B2558F80100B12264 /* Comman */,
 				F26163EF25565D9C00542751 /* Screens */,
 				F26163DA25565D9700542751 /* AppDelegate.swift */,
@@ -350,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ForHuaRongTrail/ForHuaRongTrail.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GVZPRCFHJ;
 				INFOPLIST_FILE = ForHuaRongTrail/Info.plist;
@@ -369,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ForHuaRongTrail/ForHuaRongTrail.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GVZPRCFHJ;
 				INFOPLIST_FILE = ForHuaRongTrail/Info.plist;
