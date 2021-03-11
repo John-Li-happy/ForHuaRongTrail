@@ -105,7 +105,7 @@ class FirstPuzzleViewController: UIViewController {
             label.textAlignment = .center
             label.font = UIFont.boldSystemFont(ofSize: 17)
             label.frame = CGRect(x: 0, y: element.frame.height - 30, width: element.frame.width, height: 30)
-            
+            label.textColor = .black
             element.addSubview(label)
         }
     }

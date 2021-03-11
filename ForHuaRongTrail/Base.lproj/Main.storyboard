@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YSI-gF-ors">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,6 +8,163 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Entrance View Controller-->
+        <scene sceneID="nj0-Ex-9YM">
+            <objects>
+                <viewController id="NZt-UU-Z8d" customClass="EntranceViewController" customModule="ForHuaRongTrail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G9h-sM-uXz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huarong Trail: Heng Dao Li Ma" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di5-2M-bUG">
+                                <rect key="frame" x="20" y="128" width="394" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Gwo-SW-6Pr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: swipe tiles, and get Cao Cao to rescue area" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-jj-9N2">
+                                <rect key="frame" x="15" y="203" width="384" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ah-Bc-Iab">
+                                <rect key="frame" x="159.5" y="306" width="95" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="0qw-uG-6Dv"/>
+                                    <constraint firstAttribute="height" constant="50" id="hAW-Cg-0hl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="NewGame">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="K6K-Gy-hjx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xft-29-Nfa">
+                                <rect key="frame" x="179.5" y="576" width="55" height="50"/>
+                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="cDx-W4-LTw"/>
+                                    <constraint firstAttribute="height" constant="50" id="yL5-gK-BF3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zz1-i6-r7r" kind="show" id="DPH-bA-s9C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe8-Ct-Cqq">
+                                <rect key="frame" x="99" y="486" width="216" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9cY-Kp-eh4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="gJn-6P-o3j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="Settings(Not Avaliable)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpg-pF-e9Z">
+                                <rect key="frame" x="56" y="396" width="302" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0JZ-Gh-c9q"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="dBg-jc-7VR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="LoadSavedGame(Not Avaliable)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xdF-bT-F14"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="di5-2M-bUG" firstAttribute="top" secondItem="xdF-bT-F14" secondAttribute="top" constant="40" id="1wL-jr-fMk"/>
+                            <constraint firstItem="oe8-Ct-Cqq" firstAttribute="top" secondItem="cpg-pF-e9Z" secondAttribute="bottom" constant="40" id="9fL-ha-QUW"/>
+                            <constraint firstItem="4Ah-Bc-Iab" firstAttribute="top" secondItem="WL1-jj-9N2" secondAttribute="bottom" constant="60" id="JC1-o2-RJh"/>
+                            <constraint firstItem="xft-29-Nfa" firstAttribute="centerX" secondItem="oe8-Ct-Cqq" secondAttribute="centerX" id="QRv-MW-a85"/>
+                            <constraint firstItem="xdF-bT-F14" firstAttribute="trailing" secondItem="WL1-jj-9N2" secondAttribute="trailing" constant="15" id="VxF-2K-1R5"/>
+                            <constraint firstItem="di5-2M-bUG" firstAttribute="trailing" secondItem="xdF-bT-F14" secondAttribute="trailing" id="X6c-bx-OhR"/>
+                            <constraint firstItem="4Ah-Bc-Iab" firstAttribute="centerX" secondItem="xdF-bT-F14" secondAttribute="centerX" id="aVe-N9-IPw"/>
+                            <constraint firstItem="WL1-jj-9N2" firstAttribute="top" secondItem="di5-2M-bUG" secondAttribute="bottom" constant="40" id="cd8-2A-N5g"/>
+                            <constraint firstItem="WL1-jj-9N2" firstAttribute="leading" secondItem="xdF-bT-F14" secondAttribute="leading" constant="15" id="dBY-HZ-igg"/>
+                            <constraint firstItem="cpg-pF-e9Z" firstAttribute="centerX" secondItem="4Ah-Bc-Iab" secondAttribute="centerX" id="fhQ-lG-ChW"/>
+                            <constraint firstItem="oe8-Ct-Cqq" firstAttribute="centerX" secondItem="cpg-pF-e9Z" secondAttribute="centerX" id="fxK-8v-DhM"/>
+                            <constraint firstItem="cpg-pF-e9Z" firstAttribute="top" secondItem="4Ah-Bc-Iab" secondAttribute="bottom" constant="40" id="gcF-wg-x1v"/>
+                            <constraint firstItem="di5-2M-bUG" firstAttribute="leading" secondItem="xdF-bT-F14" secondAttribute="leading" constant="20" id="jmg-rP-lUl"/>
+                            <constraint firstItem="xft-29-Nfa" firstAttribute="top" secondItem="oe8-Ct-Cqq" secondAttribute="bottom" constant="40" id="u7A-7y-jj1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qw5-fE-6rT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zK-Z0-LMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="114.50892857142857"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="mGM-2h-XRR">
+            <objects>
+                <viewController id="zz1-i6-r7r" customClass="AboutViewController" customModule="ForHuaRongTrail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zeW-QA-CCe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huarong Trail: Hen Dao Li Ma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi8-2O-BdE">
+                                <rect key="frame" x="15" y="118" width="384" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="threekingdom.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nwo-nW-bNH">
+                                <rect key="frame" x="15" y="547" width="384" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8Af-UJ-HZ5"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TBe-0o-Gm3">
+                                <rect key="frame" x="15" y="169.5" width="384" height="352.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Huarong trail is an ancient canyon where located in Jingzhou city, Hubei Province, China. 
+
+Nowadays, it has become one of the most important economical center. At the late of 200 CE, Han dynasty was separated by three kingdoms, so called “three-kingdoms period”. Cao Cao was the leader of Wei Kingdom, and Yu Guan was the general of Shu Kingdom. 
+
+In late December of 220 CE, Cao Cao was defeated in “Battle of Chibi”. In order to survive, he must to escape from Yu Guan’s army. They encountered at Huarong Trail.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JhO-YP-DNO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TBe-0o-Gm3" firstAttribute="leading" secondItem="JhO-YP-DNO" secondAttribute="leading" constant="15" id="1NF-Cf-PlP"/>
+                            <constraint firstItem="gi8-2O-BdE" firstAttribute="top" secondItem="JhO-YP-DNO" secondAttribute="top" constant="30" id="3Ri-32-uCW"/>
+                            <constraint firstItem="JhO-YP-DNO" firstAttribute="bottom" secondItem="nwo-nW-bNH" secondAttribute="bottom" constant="15" id="5kd-zH-DBQ"/>
+                            <constraint firstItem="JhO-YP-DNO" firstAttribute="trailing" secondItem="nwo-nW-bNH" secondAttribute="trailing" constant="15" id="8vl-Xb-HlJ"/>
+                            <constraint firstItem="TBe-0o-Gm3" firstAttribute="top" secondItem="gi8-2O-BdE" secondAttribute="bottom" constant="25" id="AiE-0C-REt"/>
+                            <constraint firstItem="JhO-YP-DNO" firstAttribute="trailing" secondItem="TBe-0o-Gm3" secondAttribute="trailing" constant="15" id="Jba-If-eQe"/>
+                            <constraint firstItem="JhO-YP-DNO" firstAttribute="trailing" secondItem="gi8-2O-BdE" secondAttribute="trailing" constant="15" id="TyS-jf-iU8"/>
+                            <constraint firstItem="gi8-2O-BdE" firstAttribute="leading" secondItem="JhO-YP-DNO" secondAttribute="leading" constant="15" id="YJF-Dr-0QJ"/>
+                            <constraint firstItem="nwo-nW-bNH" firstAttribute="leading" secondItem="JhO-YP-DNO" secondAttribute="leading" constant="15" id="t9w-Hw-7dF"/>
+                            <constraint firstItem="nwo-nW-bNH" firstAttribute="top" secondItem="TBe-0o-Gm3" secondAttribute="bottom" constant="25" id="xin-HM-Has"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JzF-1h-OrI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkP-vp-LqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="830.35714285714278"/>
+        </scene>
         <!--First Puzzle View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,11 +174,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xA7-52-ZDv" userLabel="woodBorderView">
-                                <rect key="frame" x="21.5" y="226" width="371" height="454"/>
+                                <rect key="frame" x="21.5" y="248" width="371" height="454"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMo-cb-dBV" userLabel="ContentView">
-                                <rect key="frame" x="41.5" y="246" width="331" height="414"/>
+                                <rect key="frame" x="41.5" y="268" width="331" height="414"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Caocao" translatesAutoresizingMaskIntoConstraints="NO" id="uhh-ly-rPC">
                                         <rect key="frame" x="88" y="8" width="161" height="158"/>
@@ -100,19 +257,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEt-ds-dB5">
-                                <rect key="frame" x="144.5" y="695" width="125" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="147.5" y="717" width="119.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastMinimum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uN-lP-IQg">
-                                <rect key="frame" x="20" y="200" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="214.5" width="115.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-kv-hfE" userLabel="RescueView">
-                                <rect key="frame" x="124" y="660" width="166" height="20"/>
+                                <rect key="frame" x="124" y="682" width="166" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rescue Area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saY-2T-wup">
                                         <rect key="frame" x="0.0" y="0.0" width="166" height="20"/>
@@ -132,24 +289,9 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not yet" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wki-IH-CaC">
-                                <rect key="frame" x="338.5" y="200" width="55.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Huarong Trail: Heng Dao Li Ma" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnO-ds-dtN">
-                                <rect key="frame" x="20" y="64" width="394" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="6gz-Ir-SBJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: swipe tiles, and get Cao Cao to rescue area" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-jj-9N2">
-                                <rect key="frame" x="20" y="104" width="384" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="326.5" y="214.5" width="67.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -161,7 +303,6 @@
                             <constraint firstItem="xA7-52-ZDv" firstAttribute="leading" secondItem="zMo-cb-dBV" secondAttribute="leading" constant="-20" id="DOx-c8-wbT"/>
                             <constraint firstItem="vEt-ds-dB5" firstAttribute="top" secondItem="xA7-52-ZDv" secondAttribute="bottom" constant="15" id="Lfb-v2-HAv"/>
                             <constraint firstItem="zMo-cb-dBV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="4:5" id="Mra-UR-ThL"/>
-                            <constraint firstItem="PnO-ds-dtN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QpA-eF-ulG"/>
                             <constraint firstItem="xA7-52-ZDv" firstAttribute="top" secondItem="4uN-lP-IQg" secondAttribute="bottom" constant="5" id="R5m-6d-r7T"/>
                             <constraint firstItem="xA7-52-ZDv" firstAttribute="top" secondItem="Wki-IH-CaC" secondAttribute="bottom" constant="5" id="TCC-TD-GVb"/>
                             <constraint firstItem="vEt-ds-dB5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YbN-I1-os6"/>
@@ -170,16 +311,13 @@
                             <constraint firstItem="xA7-52-ZDv" firstAttribute="top" secondItem="zMo-cb-dBV" secondAttribute="top" constant="-20" id="eyK-LC-d8o"/>
                             <constraint firstItem="WNz-kv-hfE" firstAttribute="top" secondItem="zMo-cb-dBV" secondAttribute="bottom" id="hUD-xr-vEH"/>
                             <constraint firstItem="zMo-cb-dBV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="haq-6P-2WY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PnO-ds-dtN" secondAttribute="trailing" id="miw-jD-EFL"/>
-                            <constraint firstItem="PnO-ds-dtN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qPW-dN-ZDk"/>
-                            <constraint firstItem="WL1-jj-9N2" firstAttribute="top" secondItem="PnO-ds-dtN" secondAttribute="bottom" constant="5" id="qaL-6w-C66"/>
+                            <constraint firstItem="Wki-IH-CaC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4uN-lP-IQg" secondAttribute="trailing" constant="40" id="plp-rR-tKW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wki-IH-CaC" secondAttribute="trailing" constant="20" id="qmQ-4b-t6I"/>
                             <constraint firstItem="xA7-52-ZDv" firstAttribute="trailing" secondItem="zMo-cb-dBV" secondAttribute="trailing" constant="20" id="uQB-sO-dVt"/>
-                            <constraint firstAttribute="trailing" secondItem="WL1-jj-9N2" secondAttribute="trailing" constant="10" id="ube-B0-TUg"/>
-                            <constraint firstItem="WL1-jj-9N2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wLY-Bk-AxA"/>
                             <constraint firstItem="WNz-kv-hfE" firstAttribute="width" secondItem="zMo-cb-dBV" secondAttribute="width" multiplier="1:2" id="z8f-ox-qYs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="y5L-JM-L1C"/>
                     <connections>
                         <outlet property="caoCaoImageView" destination="uhh-ly-rPC" id="F3c-Gw-cIt"/>
                         <outlet property="contentView" destination="zMo-cb-dBV" id="lLA-Gl-gD5"/>
@@ -200,7 +338,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6jP-k7-mcy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YSI-gF-ors" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eve-hM-LuZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NZt-UU-Z8d" kind="relationship" relationship="rootViewController" id="O99-Dp-Bgm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgt-v1-ucX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="115"/>
         </scene>
     </scenes>
     <resources>
@@ -211,8 +367,15 @@
         <image name="ZhaoYun" width="264" height="642"/>
         <image name="guanYu" width="305" height="165"/>
         <image name="soldier" width="195" height="228"/>
+        <image name="threekingdom.jpg" width="792" height="612"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
