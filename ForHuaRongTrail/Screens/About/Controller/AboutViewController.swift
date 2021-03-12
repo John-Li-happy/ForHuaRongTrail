@@ -15,13 +15,13 @@ class AboutViewController: UIViewController {
         view.backGroundImage()
     }
     
-//    @IBAction func websiteButtonTapped(_ sender: UIButton) {
-//        if let url = URL(string: "http://huarongtrail.unaux.com/") {
-//            let config = SFSafariViewController.Configuration()
-//            config.entersReaderIfAvailable = true
-//
-//            let viewController = SFSafariViewController(url: url, configuration: config)
-//            present(viewController, animated: true)
-//        }
-//    }
+    @IBAction func websiteButtonTapped(_ sender: UIButton) {
+        if let url = URL(string: "http://huarongtrail.unaux.com/") {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+
+            let viewController = SFSafariViewController(url: url, configuration: config)
+            present(viewController, animated: true)
+        }
+    }
 }
