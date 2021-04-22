@@ -1,6 +1,8 @@
 # ForHuaRongTrail
 A time killing game designed for waiting time  
 
+![available](https://user-images.githubusercontent.com/63318597/115793381-06d75b00-a39a-11eb-8ae8-35a27eff642f.png)(https://apps.apple.com/us/app/huarongtrail/id1555108765)
+
 ## Discription
 Swipe tiles to move characters, get Cao Cao to rescue zone.
 
